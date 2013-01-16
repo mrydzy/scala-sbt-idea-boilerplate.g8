@@ -10,14 +10,12 @@ showSuccess  := true
 
 showTiming   := true
 
-libraryDependencies += "org.scalatest" % "scalatest_2.10.0-RC5" % "2.0.M5-B1" % "test"
+libraryDependencies += "org.scalatest" % "scalatest_2.10.0-RC5" % "2.0.M5-B2" % "test"
 
 libraryDependencies += "ch.qos.logback" % "logback-classic" % "1.0.9"
 
-libraryDependencies += "ch.qos.logback" % "logback-core" % "1.0.9"
+libraryDependencies += "org.clapper" %% "grizzled-slf4j" % "1.0.1"
 
 libraryDependencies += "org.slf4j" % "slf4j-api" % "1.7.2"
-
-libraryDependencies += "org.codehaus.groovy" % "groovy" % "2.0.5"
 
 initialCommands := "import $organization$.$name;format="lower,word"$._"
