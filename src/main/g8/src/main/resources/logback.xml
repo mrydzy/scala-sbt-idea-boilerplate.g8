@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <configuration scan="true" scanPeriod="10 seconds">
-    <property name="LOG_HOME" value="$loghome" />
+    <property name="LOG_HOME" value="$loghome$" />
     <appender name="STDOUT"
               class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
@@ -10,7 +10,7 @@
         </encoder>
     </appender>
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <File>$loghome/app.log</File>
+        <File>$loghome$/app.log</File>
         <rollingPolicy
                 class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <FileNamePattern>
