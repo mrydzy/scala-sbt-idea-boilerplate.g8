@@ -4,7 +4,7 @@ organization := "$organization$"
 
 version := "$version$"
 
-scalaVersion := "$scalaVersion$" 
+scalaVersion := "$scalaVersion$"
 
 showSuccess  := true
 
@@ -19,5 +19,3 @@ libraryDependencies += "org.clapper" %% "grizzled-slf4j" % "1.0.1"
 libraryDependencies += "org.slf4j" % "slf4j-api" % "1.7.2"
 
 initialCommands := "import $organization$.$name;format="lower,word"$._"
-
-
